@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World of Flavours</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+
+    <div class="logo">
+        🍽️ World of Flavours
+    </div>
+
+    <ul>
+        <li><i class="fa-solid fa-house"></i><br>Home</li>
+        <li><i class="fa-solid fa-bowl-food"></i><br>Cuisines</li>
+        <li><i class="fa-solid fa-utensils"></i><br>Dishes</li>
+        <li><i class="fa-solid fa-circle-info"></i><br>About</li>
+    </ul>
+
+    <div class="quote">
+        Good food is the foundation<br>
+        of genuine happiness.
+    </div>
+
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <img src="images/biryani.jpg" class="food">
+
+    <div class="hero-content">
+
+        <h2>Welcome to</h2>
+
+        <h1>World of Flavours</h1>
+
+        <div class="banner">
+            Your Guide to Multi-Cuisine Food Preparation
+        </div>
+
+    </div>
+
+    <img src="images/noodles.jpg" class="food">
+
+</section>
+
+<!-- Main Section -->
+<div class="container">
+
+    <h1>🍜 Select a Cuisine</h1>
+
+    <select id="cuisine" onchange="showFood()">
+        <option value="">-- Select Cuisine --</option>
+        <option value="biryani">Indian - Chicken Biryani</option>
+        <option value="noodles">Chinese - Hakka Noodles</option>
+        <option value="pizza">Italian - Pizza</option>
+    </select>
+
+    <div class="cards">
+
+        <div class="card intro">
+            <h2>Discover. Learn. Cook.</h2>
+
+            <p>
+                Select a cuisine from the dropdown
+                to explore recipes with ingredients,
+                preparation process and cooking time.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🥗 Ingredients</h3>
+            <p>Fresh ingredients used in cooking.</p>
+        </div>
+
+        <div class="card">
+            <h3>👨‍🍳 Preparation</h3>
+            <p>Step-by-step preparation process.</p>
+        </div>
+
+        <div class="card">
+            <h3>⏰ Cooking Time</h3>
+            <p>Estimated cooking duration.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Cuisine Info</h3>
+            <p>Learn about the cuisine origin.</p>
+        </div>
+
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<footer>
+    © 2026 World of Flavours | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
